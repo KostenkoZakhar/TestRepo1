@@ -12,7 +12,7 @@ public class MainLesson5 {
         // Вывод на экран color c установленным невалидным значением
         cat1.setColor("green");
         System.out.println("Cat1 color is " + cat1.getColor());
-        // Вывод на экран дефолтного значения color из второго конструктора Cat
+        // Вывод на экран дефолтного значения color из конструктора Cat с параметрами родительского класса
         Cat cat2 = new Cat(true, "mice", 4);
         System.out.println("Cat2 color is " + cat2.getColor());
     }

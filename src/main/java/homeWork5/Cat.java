@@ -23,7 +23,7 @@ public class Cat extends Animal{
 
     public Cat(boolean vegetarian, String eats, int noOfLegs) {
         super(vegetarian, eats, noOfLegs);
-        this.color = "white";
+        this.color = "white"; //correction
     }
 
 }
