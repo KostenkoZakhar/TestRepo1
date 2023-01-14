@@ -26,9 +26,12 @@ public class InitialPage {
         schoolButton.click();
         return this;
     }
-
-    public CoachesPage openCoachesPage() {
+    public void openCoachesPage() {
         linkToCoachesPage.click();
-        return new CoachesPage(driver);
     }
+
+//    public CoachesPage openCoachesPage() {
+//        linkToCoachesPage.click();
+//        return new CoachesPage(driver);
+//    }
 }

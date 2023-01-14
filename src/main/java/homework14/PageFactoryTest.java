@@ -3,15 +3,17 @@ package homework14;
 import org.junit.Test;
 
 public class PageFactoryTest extends BaseClass {
+    InitialPage initialPage;
+    CoachesPage coachesPage;
+    @Test
+    public void openCoachesPage() throws Exception {
+        initialPage = new InitialPage(driver);
+        initialPage.openInitialPage().openSchoolDropdown().openCoachesPage();}
 
     @Test
     public void getListOfCoaches() throws Exception {
-        CoachesPage coachesPage = new InitialPage(driver)
-                .openInitialPage()
-                .openSchoolDropdown()
-                .openCoachesPage()
-                .scrollToListOfCoaches()
-                .printCoachesList();
+        coachesPage = new CoachesPage(driver);
+        coachesPage.scrollToListOfCoaches().printCoachesList();
     }
 }
 
